@@ -14,6 +14,18 @@
         {% endblock %}
     </head>
     <body>
+        {% block navbar %}
+{#            {% include '_navbar.html.twig' with {'current': app.current_route} %}#}
+            {{ include('_navbar.html.twig', {current: app.current_route}, with_context = false) }}
+        {% endblock %}
+
+{#        {% block navbar %}#}
+{#            {{ dump(app.current_route) }}#}
+{#            {{ include('_navbar.html.twig', {current: 'bla'}) }}#}
+{#            {{ include('_navbar.html.twig', {current: app.current_route}, with_context = false) }}#}
+{#            {% include '_navbar.html.twig' with {'current': app.current_route} %}#}
+{#        {% endblock %}#}
+
         {% block body %}{% endblock %}
     </body>
 </html>
