@@ -6,8 +6,8 @@
 {#                {{ current }}#}
 {#                {{ app.current_route }}#}
 {#                <a class="nav-link" href="{{ path('greeting_index') }}">Home</a>#}
-                <a class="nav-link{{ 'greeting_index' == current ? ' active' : '' }}" href="{{ path('greeting_index') }}">Home</a>
-{#                <a class="nav-link" href="{{ path('greeting_index') }}">Home</a>#}
+{#                <a class="nav-link{{ 'greeting_index' == current ? ' active' : '' }}" href="{{ path('greeting_index') }}">Home</a>#}
+                <a class="nav-link" href="{{ path('greeting_index') }}">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('app_movie_index') }}">Movie</a>
@@ -16,7 +16,7 @@
                 <a class="nav-link" href="{{ path('app_book_index') }}">Book</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
+                <a class="nav-link" href="{{ path('app_contact_index') }}">Contact</a>
             </li>
         </ul>
     </div>
